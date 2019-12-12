@@ -1,3 +1,5 @@
+# Binary Image classifier using CNN 
+
 from keras.model import Sequential
 from keras.model import Convolution2D
 from keras.model import MaxPooling2D
