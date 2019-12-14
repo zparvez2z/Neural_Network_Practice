@@ -1,10 +1,10 @@
 # Binary Image classifier using CNN 
 
-from keras.model import Sequential
-from keras.model import Convolution2D
-from keras.model import MaxPooling2D
-from keras.model import Flatten
-from keras.model import Dense
+from keras.models import Sequential
+from keras.layers import Convolution2D
+from keras.layers import MaxPooling2D
+from keras.layers import Flatten
+from keras.layers import Dense
 
 classifier = Sequential()
 
