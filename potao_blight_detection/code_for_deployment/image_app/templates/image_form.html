@@ -8,24 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Potato Blight Detection</title>
+    <title>Upload Image</title>
   </head>
   <body>
     <div class="container">
-        <div class="mx-auto" style="width: 700px;">
+        <div class="mx-auto" style="width: 50%;">
             <p>The site is under development . If anything breaks , please be patient :) .</p>
-    
-            <div class="text-center">  
-                <img src="{{ last_image.Main_Img.url }}" class="rounded mx-auto d-block" style="width: 650px;"/> 
-                <p>Prediction : {{ prediction }}</p>
-            </div> 
-    
-            <p>Upload again <a href="/image_upload" >Here</a> </p>
-        
+            <p>---------------------------------------------------------------------------</p>
+            <p>Upload your image below</p> 
+                <span class="border-success">
+                    <form method = "post" enctype="multipart/form-data"> 
+                        {% csrf_token %} 
+                        {{ form.as_p }} 
+                        <button type="submit">Upload & Predict</button> 
+                    </form> 
+                </span>
         </div>
 
     </div>
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
