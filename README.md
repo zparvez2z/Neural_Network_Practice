@@ -1,2 +1,2 @@
-# Neural_Network_Practice
-This repository contains Some of my practice codes of NNs
+# My_Neural_Networks
+This repository contains codes related to Neural networks
